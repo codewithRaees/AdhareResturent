@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/bg.jpg");
+    background-position: center center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+}
+
+ .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+/*.................NabBar............................. */
+
+nav{
+    justify-content: right !important;
+    background-color:rgba(0, 0, 0, 0.351);
+    opacity: 0.8;
+}
+
+a:hover,
+a:focus 
+a:active
+a:visited{
+  color: greenyellow;
+  text-decoration: underline;
+  border-bottom: 1px solid greenyellow;
+  
+}
+
+.test{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+}
+a:focus, a:hover {
+    color: greenyellow !important;
+    text-decoration: none;
+}
+
+/*---------------------- Body Styling -------------------------- */
+h1{
+    font-size: 90px !important;
+    color: #fff !important;
+}
+.btn-mr{
+    background-color:rgba(0, 0, 0, 0.351);
+    opacity: 0.8;
+}
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-mr {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.351);
+    border-color: rgba(0, 0, 0, 0.596); /*set the color you want here*/
+}
+.btn-mr:hover, .btn-mr:focus, .btn-mr:active, .btn-mr.active, .open>.dropdown-toggle.btn-mr {
+    color: #fff;
+    background-color:  rgba(0, 0, 0, 0.351);
+    border-color: rgba(0, 0, 0, 0.596); /*set the color you want here*/
+}
+/*------------------ Google map styling-------------- */
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
